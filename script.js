@@ -1,9 +1,5 @@
-var gfg = document.getElementById("title"); 
- var changeBorder =  
-            document.getElementById("changeBorder"); 
-        changeBorder.addEventListener("click", function () { 
-            gfg.style.border = "3px solid green"; 
-            gfg.style.borderRadius = "10px"; 
-        }) 
-
-        
+var item = getElementbyClassName('list-group-name');
+item[2].style.backgroundColor = 'green';
+for(let i=0;i<item.length;i++){
+    item[i].style.fontWeight = 'bold';
+}        
