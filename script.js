@@ -35,3 +35,58 @@ var odditems = document.querySelectorAll('li:nth-child(odd)');
 for(let i=0;i<odditems.length;i++){
     odditems[i].style.backgroundColor = 'green';
 }
+
+
+
+// parent elements and child elements 
+
+var itemparentchild = document.querySelector('#item');
+
+console.log(itemparentchild.parentNode);
+
+itemparentchild.style.backgroundColor = 'yellow';
+
+console.log(itemparentchild.parentNode.parentNode.parentNode);
+
+
+
+
+console.log(itemparentchild.parentElement);
+itemparentchild.style.backgroundColor = 'red';
+console.log(itemparentchild.parentElement.parentElement.parentElement);
+
+
+// child emelents
+
+console.log(itemparentchild.childNodes);
+itemparentchild.lastChild.style.backgroundColor = 'black';
+console.log(itemparentchild.nextElementSibling);
+
+// previous elements 
+
+console.log(itemparentchild.previousElementSibling);
+console.log(itemparentchild.previousSibling);
+
+itemparentchild.previousSibling.style.color = 'red';
+
+
+// create element with javascript 
+
+let newDiv = document.createElement('Div');
+
+newDiv.className('new class');
+newDiv.id('new id');
+
+newDiv.setAttribute('title','Hello div');
+
+let newDivtext = document.createTextNode('Hello world');
+
+newDiv.appendChild(newDivtext);
+
+
+let container = document.querySelector('header .container');
+
+let h1 = document.querySelector('header h1');
+
+newDiv.style.fontSize = '30px';
+
